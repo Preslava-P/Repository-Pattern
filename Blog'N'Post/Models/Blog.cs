@@ -11,7 +11,6 @@ namespace Blog_N_Post.Models
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid BlogId { get; set; }
-
         public string BlogTitle { get; set; }
         public string BlogDescription { get; set; }
         public ICollection<Post> Post { get; set; }
